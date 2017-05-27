@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,26 +18,99 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="w8I-5L-IfS"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yJ-3F-nR0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jo-DX-G2B">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mireille" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1F-sE-MCn">
+                                                <rect key="frame" x="194" y="895" width="55" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TyM-VS-26T">
+                                                <rect key="frame" x="0.0" y="421" width="375" height="44"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iIX-Jy-fXA"/>
+                                                </connections>
+                                            </searchBar>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover nearby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-Ul-fFw">
+                                                <rect key="frame" x="8" y="479" width="226" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.38039215686274508" green="0.1803921568627451" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.94901960784313721" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="TyM-VS-26T" firstAttribute="leading" secondItem="3jo-DX-G2B" secondAttribute="leading" id="BUS-fI-5OU"/>
+                                            <constraint firstItem="TyM-VS-26T" firstAttribute="top" secondItem="3jo-DX-G2B" secondAttribute="top" constant="421" id="VcP-v3-Rzw"/>
+                                            <constraint firstAttribute="trailing" secondItem="TyM-VS-26T" secondAttribute="trailing" id="eLr-G4-myQ"/>
+                                            <constraint firstAttribute="height" constant="1000" id="zpK-v1-FiE"/>
+                                        </constraints>
+                                    </view>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="w8I-5L-IfS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="6Nr-AT-Y8W"/>
+                                        </constraints>
+                                    </mapView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3jo-DX-G2B" secondAttribute="trailing" id="0jg-My-NZ3"/>
+                                    <constraint firstAttribute="bottom" secondItem="3jo-DX-G2B" secondAttribute="bottom" id="3aZ-Kd-e5L"/>
+                                    <constraint firstItem="3jo-DX-G2B" firstAttribute="top" secondItem="8yJ-3F-nR0" secondAttribute="top" id="BON-zi-fQM"/>
+                                    <constraint firstAttribute="trailing" secondItem="w8I-5L-IfS" secondAttribute="trailing" id="DxU-zv-4Ih"/>
+                                    <constraint firstItem="w8I-5L-IfS" firstAttribute="top" secondItem="8yJ-3F-nR0" secondAttribute="top" id="HMs-fd-X6t"/>
+                                    <constraint firstItem="w8I-5L-IfS" firstAttribute="leading" secondItem="8yJ-3F-nR0" secondAttribute="leading" id="Vup-ow-j0h"/>
+                                    <constraint firstItem="3jo-DX-G2B" firstAttribute="leading" secondItem="8yJ-3F-nR0" secondAttribute="leading" id="yxg-sP-Sv2"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w8I-5L-IfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7gW-1C-CWr"/>
-                            <constraint firstAttribute="trailing" secondItem="w8I-5L-IfS" secondAttribute="trailing" id="S1u-WH-Rvl"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w8I-5L-IfS" secondAttribute="bottom" id="SFU-2Y-v0i"/>
-                            <constraint firstItem="w8I-5L-IfS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TgF-M7-c8S"/>
+                            <constraint firstItem="8yJ-3F-nR0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LkD-9T-w1U"/>
+                            <constraint firstAttribute="trailing" secondItem="8yJ-3F-nR0" secondAttribute="trailing" id="Y66-de-poH"/>
+                            <constraint firstItem="8yJ-3F-nR0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kMh-dd-2rz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8yJ-3F-nR0" secondAttribute="bottom" id="oMh-vo-8sh"/>
+                            <constraint firstItem="3jo-DX-G2B" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vCV-EW-Eh0"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="map" destination="w8I-5L-IfS" id="CIw-as-NEr"/>
+                        <outlet property="searchDisplayController" destination="JFS-9k-eHB" id="55X-QT-YIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="AoC-Hb-cSj">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="lI1-vv-N4I"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="xfb-Wb-VWO"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="o4t-eW-MZ2"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="cMM-2x-K3Z"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="JFS-9k-eHB">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="S0d-tT-Jek"/>
+                        <outlet property="searchBar" destination="TyM-VS-26T" id="Vzc-OP-e4o"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="pIR-hB-o47"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="eCA-ei-fEa"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="nqc-hC-GwD"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="136.80000000000001" y="138.53073463268368"/>
         </scene>
     </scenes>
 </document>
