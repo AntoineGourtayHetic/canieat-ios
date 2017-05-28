@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		289650D21EDB2DA200124242 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289650D11EDB2DA200124242 /* HomeController.swift */; };
+		289650D91EDB708300124242 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D31EDB708300124242 /* Mitr-Bold.ttf */; };
+		289650DA1EDB708300124242 /* Mitr-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */; };
+		289650DB1EDB708300124242 /* Mitr-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D51EDB708300124242 /* Mitr-Light.ttf */; };
+		289650DC1EDB708300124242 /* Mitr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D61EDB708300124242 /* Mitr-Medium.ttf */; };
+		289650DD1EDB708300124242 /* Mitr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D71EDB708300124242 /* Mitr-Regular.ttf */; };
+		289650DE1EDB708300124242 /* Mitr-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D81EDB708300124242 /* Mitr-SemiBold.ttf */; };
 		DEA88FD71D90415F00005FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA88FD61D90415F00005FD0 /* AppDelegate.swift */; };
 		DEA88FD91D90415F00005FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA88FD81D90415F00005FD0 /* ViewController.swift */; };
 		DEA88FDC1D90415F00005FD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA88FDA1D90415F00005FD0 /* Main.storyboard */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		289650D11EDB2DA200124242 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		289650D31EDB708300124242 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
+		289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-ExtraLight.ttf"; sourceTree = "<group>"; };
+		289650D51EDB708300124242 /* Mitr-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Light.ttf"; sourceTree = "<group>"; };
+		289650D61EDB708300124242 /* Mitr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Medium.ttf"; sourceTree = "<group>"; };
+		289650D71EDB708300124242 /* Mitr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Regular.ttf"; sourceTree = "<group>"; };
+		289650D81EDB708300124242 /* Mitr-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-SemiBold.ttf"; sourceTree = "<group>"; };
 		DEA88FD31D90415F00005FD0 /* userLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = userLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA88FD61D90415F00005FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA88FD81D90415F00005FD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +52,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289650DF1EDB708B00124242 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				289650D31EDB708300124242 /* Mitr-Bold.ttf */,
+				289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */,
+				289650D51EDB708300124242 /* Mitr-Light.ttf */,
+				289650D61EDB708300124242 /* Mitr-Medium.ttf */,
+				289650D71EDB708300124242 /* Mitr-Regular.ttf */,
+				289650D81EDB708300124242 /* Mitr-SemiBold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		DEA88FCA1D90415F00005FD0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +85,7 @@
 		DEA88FD51D90415F00005FD0 /* userLocation */ = {
 			isa = PBXGroup;
 			children = (
+				289650DF1EDB708B00124242 /* Fonts */,
 				DEA88FD61D90415F00005FD0 /* AppDelegate.swift */,
 				DEA88FD81D90415F00005FD0 /* ViewController.swift */,
 				DEA88FDA1D90415F00005FD0 /* Main.storyboard */,
@@ -138,9 +164,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289650DC1EDB708300124242 /* Mitr-Medium.ttf in Resources */,
 				DEA88FE11D90415F00005FD0 /* LaunchScreen.storyboard in Resources */,
 				DEA88FDE1D90415F00005FD0 /* Assets.xcassets in Resources */,
+				289650DE1EDB708300124242 /* Mitr-SemiBold.ttf in Resources */,
 				DEA88FDC1D90415F00005FD0 /* Main.storyboard in Resources */,
+				289650DA1EDB708300124242 /* Mitr-ExtraLight.ttf in Resources */,
+				289650D91EDB708300124242 /* Mitr-Bold.ttf in Resources */,
+				289650DB1EDB708300124242 /* Mitr-Light.ttf in Resources */,
+				289650DD1EDB708300124242 /* Mitr-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,14 @@
 	<string>Main</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Hey! I want to know where you&apos;re @!</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/Mitr-ExtraLight.ttf</string>
+		<string>Fonts/Mitr-Bold.ttf</string>
+		<string>Fonts/Mitr-Regular.ttf</string>
+		<string>Fonts/Mitr-Medium.ttf</string>
+		<string>Fonts/Mitr-SemiBold.ttf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

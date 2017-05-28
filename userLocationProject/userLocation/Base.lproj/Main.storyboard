@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mitr-SemiBold.ttf">
+            <string>Mitr-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -148,7 +153,7 @@
                                         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" translatesAutoresizingMaskIntoConstraints="NO" id="Dcx-QV-t8S">
                                             <rect key="frame" x="20" y="542" width="335" height="45"/>
                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dcx-QV-t8S" id="XwH-fA-jke">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="44.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableViewCellContentView>
                                             <color key="backgroundColor" red="0.84253666465721122" green="0.65712496093650818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -159,7 +164,7 @@
                                         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" translatesAutoresizingMaskIntoConstraints="NO" id="hmf-cq-mO4">
                                             <rect key="frame" x="20" y="607" width="0.0" height="45"/>
                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hmf-cq-mO4" id="yoe-eD-wWK">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableViewCellContentView>
                                             <color key="backgroundColor" red="0.097076405500000004" green="1" blue="0.14733291309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,7 +176,7 @@
                                         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPz-6g-N7d">
                                             <rect key="frame" x="355" y="607" width="0.0" height="45"/>
                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BPz-6g-N7d" id="g2b-nj-1h0">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableViewCellContentView>
                                             <color key="backgroundColor" red="1" green="0.98012891390000001" blue="0.26572297119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -275,7 +280,7 @@
                                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" translatesAutoresizingMaskIntoConstraints="NO" id="wnL-QM-aqR">
                                                     <rect key="frame" x="20" y="550" width="335" height="45"/>
                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wnL-QM-aqR" id="ySy-Jg-6WV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="44.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </tableViewCellContentView>
                                                     <color key="backgroundColor" red="0.84253666469999999" green="0.65712496090000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -290,13 +295,13 @@
                                                         <outlet property="delegate" destination="BYZ-38-t0r" id="g4h-va-G7t"/>
                                                     </connections>
                                                 </searchBar>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover nearby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-wC-Qeq">
-                                                    <rect key="frame" x="20" y="478" width="226" height="43"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Discover nearby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-wC-Qeq">
+                                                    <rect key="frame" x="20" y="478" width="266" height="43"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="43" id="GPg-G2-FUd"/>
                                                         <constraint firstAttribute="width" constant="226" id="trV-0V-jdL"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="Mitr-SemiBold" family="Mitr" pointSize="30"/>
                                                     <color key="textColor" red="0.3803921569" green="0.18039215689999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -361,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0q-Yx-9y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2327" y="-212"/>
+            <point key="canvasLocation" x="2325.5999999999999" y="-212.29385307346328"/>
         </scene>
     </scenes>
 </document>
