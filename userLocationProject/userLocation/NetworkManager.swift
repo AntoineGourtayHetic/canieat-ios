@@ -24,7 +24,7 @@ class NetworkManager: NSObject {
             case.success(_):
                 let data = response.data
                 let json = JSON(data)
-                let restaurantArrayJSON = json.arrayValue
+                let restaurantArrayJSON = json["results"].arrayValue
                 var arrayOfRestaurant = [Restaurant()]
                 for restaurantJSON in restaurantArrayJSON{
                     let realRestaurant = Restaurant(json: restaurantJSON)
