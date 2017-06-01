@@ -11,6 +11,7 @@ import CoreLocation
 
 class HomeController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
     var restaurants: [Restaurant] = [Restaurant]()
     //Map
     
@@ -34,6 +35,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     func getRestaurantsData() {
         NetworkManager.getRestaurant { (restaurantFromAPI) in
             self.restaurants = restaurantFromAPI
+            self.tableView.reloadData()
             for restaurant in self.restaurants {
                 print(restaurant.name)
             }
@@ -50,7 +52,8 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         self.getRestaurantsData()
     }
     
@@ -59,5 +62,36 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     }
     
     
+}
+
+
+
+ extension HomeController: UITableViewDelegate {
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Get current episode
+        let myRestaurant = restaurants[indexPath.row]
+        // Initialyze storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // Get controller
+        let detailController = storyboard.instantiateViewController(withIdentifier: "DetailID") as! DetailViewController
+        // Add params
+        detailController.selectedRestaurant = myRestaurant
+        // Push new view
+        self.navigationController?.pushViewController(detailController, animated: true)
+        
+    }
+}
+
+extension HomeController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurants.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("cellForRowAt: \(indexPath.row)")
+        let myRestaurant = restaurants[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell") as!RestaurantFullCell
+        cell.restaurantName.text = myRestaurant.name
+        return cell
+    }
 }
 
