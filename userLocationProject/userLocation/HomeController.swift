@@ -51,7 +51,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         
-        nearby_restaurant_name.text = "flappy"
+        self.getRestaurantsData()
     }
     
     override func didReceiveMemoryWarning() {

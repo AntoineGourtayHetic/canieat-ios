@@ -259,17 +259,17 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="413"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vuv-Xo-VOv" id="SlA-Ty-e4t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="412.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="193" id="sZv-pM-Bx5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="193" id="sZv-pM-Bx5" userLabel="Full" customClass="RestaurantFullCell" customModule="userLocation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="441" width="375" height="193"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sZv-pM-Bx5" id="9zy-Tt-vtH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="192.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-3q-qz3">
@@ -293,12 +293,16 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="restaurantImage" destination="lcb-3q-qz3" id="or5-xJ-WTL"/>
+                                            <outlet property="restaurantName" destination="Hr9-BP-VhA" id="m3H-mg-uTr"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="219" id="riS-rC-mha">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="219" id="riS-rC-mha" userLabel="Duo" customClass="RestaurantDuoCell" customModule="userLocation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="634" width="375" height="219"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="riS-rC-mha" id="Rpr-kl-hXa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="218.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M6l-ed-tje">
@@ -337,6 +341,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="restaurantImageLeft" destination="M6l-ed-tje" id="84l-YP-1A1"/>
+                                            <outlet property="restaurantImageRight" destination="tKm-iK-8k4" id="B0L-Zy-t7g"/>
+                                            <outlet property="restaurantNameRight" destination="Bd4-sL-p6o" id="XTh-1E-fXc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
