@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284917951EE03F3F00CCAFD1 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284917941EE03F3F00CCAFD1 /* EmptyCell.swift */; };
 		289650D21EDB2DA200124242 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289650D11EDB2DA200124242 /* HomeController.swift */; };
 		289650D91EDB708300124242 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D31EDB708300124242 /* Mitr-Bold.ttf */; };
 		289650DA1EDB708300124242 /* Mitr-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284917941EE03F3F00CCAFD1 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		289650D11EDB2DA200124242 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		289650D31EDB708300124242 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
 		289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				28BCF2651EE00E8D00773504 /* RestaurantFullCell.swift */,
 				28BCF2691EE00EAA00773504 /* RestaurantDuoCell.swift */,
+				284917941EE03F3F00CCAFD1 /* EmptyCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C708E41EDEE5BC00D2507C /* NetworkManager.swift in Sources */,
+				284917951EE03F3F00CCAFD1 /* EmptyCell.swift in Sources */,
 				28C708E81EDEE7B500D2507C /* Restaurant.swift in Sources */,
 				28BCF26A1EE00EAA00773504 /* RestaurantDuoCell.swift in Sources */,
 				28BCF2661EE00E8D00773504 /* RestaurantFullCell.swift in Sources */,

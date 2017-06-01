@@ -149,18 +149,18 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="413" id="vuv-Xo-VOv" userLabel="Empty">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="413"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EmptyCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmptyCell" rowHeight="443" id="vuv-Xo-VOv" userLabel="Empty" customClass="EmptyCell" customModule="userLocation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="443"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vuv-Xo-VOv" id="SlA-Ty-e4t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="412.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="442.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="193" id="sZv-pM-Bx5" userLabel="Full" customClass="RestaurantFullCell" customModule="userLocation" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="441" width="375" height="193"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RestaurantFullCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantFullCell" rowHeight="193" id="sZv-pM-Bx5" userLabel="Full" customClass="RestaurantFullCell" customModule="userLocation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="471" width="375" height="193"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sZv-pM-Bx5" id="9zy-Tt-vtH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="192.5"/>
@@ -192,8 +192,8 @@
                                             <outlet property="restaurantName" destination="Hr9-BP-VhA" id="m3H-mg-uTr"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="219" id="riS-rC-mha" userLabel="Duo" customClass="RestaurantDuoCell" customModule="userLocation" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="634" width="375" height="219"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RestaurantDuoCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDuoCell" rowHeight="219" id="riS-rC-mha" userLabel="Duo" customClass="RestaurantDuoCell" customModule="userLocation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="664" width="375" height="219"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="riS-rC-mha" id="Rpr-kl-hXa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="218.5"/>

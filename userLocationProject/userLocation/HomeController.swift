@@ -86,12 +86,30 @@ extension HomeController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         print("cellForRowAt: \(indexPath.row)")
         let myRestaurant = restaurants[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell") as!RestaurantFullCell
-        cell.restaurantName.text = myRestaurant.name
-        return cell
+        
+        var cell: UITableViewCell?
+    
+        if indexPath.row >= 1 {
+            
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
+            
+            cell2.restaurantName.text = myRestaurant.name
+            
+            cell = cell2
+        } //else //if indexPath.row == 2{
+             //let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
+            //cell2.restaurantNameLeft.text = myRestaurant.name
+            
+          //  cell = cell2
+        //} 
+        else if indexPath.row == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as! EmptyCell
+        }
+      return cell!
     }
 }
-
