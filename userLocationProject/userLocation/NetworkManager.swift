@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class NetworkManager: NSObject {
+    
     typealias RestaurantResult = ([Restaurant]) -> Void
     
     static func getRestaurant(completionHandler: @escaping RestaurantResult){

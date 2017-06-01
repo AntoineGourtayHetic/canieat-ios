@@ -16,9 +16,6 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     
     let manager = CLLocationManager()
     
-    @IBOutlet weak var nearby_restaurant: UITableViewCell!
-    @IBOutlet weak var nearby_restaurant_name: UILabel!
-    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
@@ -45,7 +42,6 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         
-        nearby_restaurant_name.text = "flappy"
     }
     
     override func didReceiveMemoryWarning() {
