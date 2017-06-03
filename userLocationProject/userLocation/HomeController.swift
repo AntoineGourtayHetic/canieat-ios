@@ -90,7 +90,7 @@ extension HomeController: UITableViewDataSource {
         
         var cell: UITableViewCell?
     
-        if indexPath.row == 1 {
+        if indexPath.row >= 1 {
             
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
             
@@ -108,5 +108,13 @@ extension HomeController: UITableViewDataSource {
             print(tableView)
         }
       return cell!
+    }
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        if indexPath.row == 0 {
+            return 460
+        }
+        else{
+            return 100
+        }
     }
 }
