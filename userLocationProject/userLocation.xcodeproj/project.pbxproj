@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		284917951EE03F3F00CCAFD1 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284917941EE03F3F00CCAFD1 /* EmptyCell.swift */; };
 		289650D21EDB2DA200124242 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289650D11EDB2DA200124242 /* HomeController.swift */; };
 		289650D91EDB708300124242 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D31EDB708300124242 /* Mitr-Bold.ttf */; };
 		289650DA1EDB708300124242 /* Mitr-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */; };
@@ -15,9 +14,11 @@
 		289650DC1EDB708300124242 /* Mitr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D61EDB708300124242 /* Mitr-Medium.ttf */; };
 		289650DD1EDB708300124242 /* Mitr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D71EDB708300124242 /* Mitr-Regular.ttf */; };
 		289650DE1EDB708300124242 /* Mitr-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D81EDB708300124242 /* Mitr-SemiBold.ttf */; };
+		28A33B631EE2F4CF008B6C72 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A33B611EE2F4CF008B6C72 /* EmptyCell.swift */; };
+		28A33B641EE2F4CF008B6C72 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A33B621EE2F4CF008B6C72 /* EmptyCell.xib */; };
+		28BA23CE1EE16A7B00BA6AB2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA23CD1EE16A7B00BA6AB2 /* DetailViewController.swift */; };
 		28BCF2661EE00E8D00773504 /* RestaurantFullCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCF2651EE00E8D00773504 /* RestaurantFullCell.swift */; };
 		28BCF26A1EE00EAA00773504 /* RestaurantDuoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCF2691EE00EAA00773504 /* RestaurantDuoCell.swift */; };
-		28BCF26D1EE0202900773504 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCF26C1EE0202900773504 /* DetailViewController.swift */; };
 		28C708E41EDEE5BC00D2507C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C708E31EDEE5BC00D2507C /* NetworkManager.swift */; };
 		28C708E81EDEE7B500D2507C /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C708E71EDEE7B500D2507C /* Restaurant.swift */; };
 		A13A1D31B548EEE022540147 /* Pods_userLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D8541904B189F846836B46 /* Pods_userLocation.framework */; };
@@ -29,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		284917941EE03F3F00CCAFD1 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		289650D11EDB2DA200124242 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		289650D31EDB708300124242 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
 		289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -37,9 +37,11 @@
 		289650D61EDB708300124242 /* Mitr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Medium.ttf"; sourceTree = "<group>"; };
 		289650D71EDB708300124242 /* Mitr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Regular.ttf"; sourceTree = "<group>"; };
 		289650D81EDB708300124242 /* Mitr-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-SemiBold.ttf"; sourceTree = "<group>"; };
+		28A33B611EE2F4CF008B6C72 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		28A33B621EE2F4CF008B6C72 /* EmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		28BA23CD1EE16A7B00BA6AB2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		28BCF2651EE00E8D00773504 /* RestaurantFullCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantFullCell.swift; sourceTree = "<group>"; };
 		28BCF2691EE00EAA00773504 /* RestaurantDuoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDuoCell.swift; sourceTree = "<group>"; };
-		28BCF26C1EE0202900773504 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		28C708E31EDEE5BC00D2507C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		28C708E71EDEE7B500D2507C /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		474E2EC2D3D2EFB911FA3209 /* Pods-userLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-userLocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-userLocation/Pods-userLocation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				289650D11EDB2DA200124242 /* HomeController.swift */,
-				28BCF26C1EE0202900773504 /* DetailViewController.swift */,
+				28BA23CD1EE16A7B00BA6AB2 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -103,7 +105,8 @@
 			children = (
 				28BCF2651EE00E8D00773504 /* RestaurantFullCell.swift */,
 				28BCF2691EE00EAA00773504 /* RestaurantDuoCell.swift */,
-				284917941EE03F3F00CCAFD1 /* EmptyCell.swift */,
+				28A33B611EE2F4CF008B6C72 /* EmptyCell.swift */,
+				28A33B621EE2F4CF008B6C72 /* EmptyCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				TargetAttributes = {
 					DEA88FD21D90415F00005FD0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 99D895TFL2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -231,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				289650DC1EDB708300124242 /* Mitr-Medium.ttf in Resources */,
+				28A33B641EE2F4CF008B6C72 /* EmptyCell.xib in Resources */,
 				DEA88FE11D90415F00005FD0 /* LaunchScreen.storyboard in Resources */,
 				DEA88FDE1D90415F00005FD0 /* Assets.xcassets in Resources */,
 				289650DE1EDB708300124242 /* Mitr-SemiBold.ttf in Resources */,
@@ -298,13 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C708E41EDEE5BC00D2507C /* NetworkManager.swift in Sources */,
-				284917951EE03F3F00CCAFD1 /* EmptyCell.swift in Sources */,
+				28A33B631EE2F4CF008B6C72 /* EmptyCell.swift in Sources */,
 				28C708E81EDEE7B500D2507C /* Restaurant.swift in Sources */,
 				28BCF26A1EE00EAA00773504 /* RestaurantDuoCell.swift in Sources */,
 				28BCF2661EE00E8D00773504 /* RestaurantFullCell.swift in Sources */,
 				DEA88FD71D90415F00005FD0 /* AppDelegate.swift in Sources */,
 				289650D21EDB2DA200124242 /* HomeController.swift in Sources */,
-				28BCF26D1EE0202900773504 /* DetailViewController.swift in Sources */,
+				28BA23CE1EE16A7B00BA6AB2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +431,7 @@
 			baseConfigurationReference = 474E2EC2D3D2EFB911FA3209 /* Pods-userLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99D895TFL2;
 				INFOPLIST_FILE = userLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sebastian.userLocation;
@@ -439,6 +445,7 @@
 			baseConfigurationReference = CA6FB1E5EC67C23712CD6A92 /* Pods-userLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99D895TFL2;
 				INFOPLIST_FILE = userLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sebastian.userLocation;

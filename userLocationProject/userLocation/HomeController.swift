@@ -40,7 +40,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
                 print(restaurant.name)
             }
 
-//            self.tableView.reloadData()
+            self.tableView.reloadData()
         }
     }
     
@@ -60,11 +60,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
 }
-
-
 
  extension HomeController: UITableViewDelegate {
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -89,12 +85,12 @@ extension HomeController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("cellForRowAt: \(indexPath.row)")
+        // print("cellForRowAt: \(indexPath.row)")
         let myRestaurant = restaurants[indexPath.row]
         
         var cell: UITableViewCell?
     
-        if indexPath.row >= 1 {
+        if indexPath.row == 1 {
             
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
             
@@ -107,8 +103,9 @@ extension HomeController: UITableViewDataSource {
             
           //  cell = cell2
         //} 
-        else if indexPath.row == 0 {
+        else {
             cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as! EmptyCell
+            print(tableView)
         }
       return cell!
     }
