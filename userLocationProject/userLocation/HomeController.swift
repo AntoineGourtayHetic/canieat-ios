@@ -39,7 +39,6 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
             for restaurant in self.restaurants {
                 print(restaurant.name)
             }
-
             self.tableView.reloadData()
         }
     }
@@ -97,10 +96,9 @@ extension HomeController: UITableViewDataSource {
         }
         else if indexPath.row >= 2{
              let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
-            //cell2.restaurantNameLeft.text = myRestaurant.name
-            //cell2.restaurantNameRight.text = myRestaurant.name
+            cell2.restaurantNameLeft.text = myRestaurant.name
+            cell2.restaurantNameRight.text = myRestaurant.name
             cell = cell2
-            print("flappy")
         }
         else {
             cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as! EmptyCell
