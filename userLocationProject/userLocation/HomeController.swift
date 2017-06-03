@@ -90,31 +90,30 @@ extension HomeController: UITableViewDataSource {
         
         var cell: UITableViewCell?
     
-        if indexPath.row >= 1 {
-            
+        if indexPath.row == 1 {
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
-            
             cell2.restaurantName.text = myRestaurant.name
-            
             cell = cell2
-        } //else //if indexPath.row == 2{
-             //let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
+        }
+        else if indexPath.row >= 2{
+             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
             //cell2.restaurantNameLeft.text = myRestaurant.name
-            
-          //  cell = cell2
-        //} 
+            //cell2.restaurantNameRight.text = myRestaurant.name
+            cell = cell2
+            print("flappy")
+        }
         else {
             cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as! EmptyCell
-            print(tableView)
         }
       return cell!
     }
+    
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         if indexPath.row == 0 {
-            return 460
+            return 400
         }
         else{
-            return 100
+            return 190
         }
     }
 }
