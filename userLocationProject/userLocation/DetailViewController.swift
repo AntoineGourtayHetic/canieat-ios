@@ -19,6 +19,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = selectedRestaurant.name
+        print(selectedRestaurant.imageUrl)
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +30,6 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func button_goPressed(_ sender: UIButton) {
-        print("mireille")
         let latitude: CLLocationDegrees = selectedRestaurant.latitude
         let longitude: CLLocationDegrees = selectedRestaurant.longitude
         

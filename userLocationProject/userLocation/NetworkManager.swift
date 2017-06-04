@@ -9,13 +9,18 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import CoreLocation
 
-class NetworkManager: NSObject {
-    
+class NetworkManager: NSObject, CLLocationManagerDelegate{
     typealias RestaurantResult = ([Restaurant]) -> Void
-    
+
     static func getRestaurant(completionHandler: @escaping RestaurantResult){
-        Alamofire.request("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=48.8445548%2C2.4222176&radius=5000&type=restaurant&keyword=vegan&key=AIzaSyA8Jf9E6m_Rr_v_fd-rA7dQOtn1VnTR4zs").responseJSON { (response)
+        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+        {
+            let location = locations[0]
+            let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        }
+        Alamofire.request("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=48.8445548%2C2.4222176&radius=500&type=restaurant&keyword=vegan&key=AIzaSyA8Jf9E6m_Rr_v_fd-rA7dQOtn1VnTR4zs").responseJSON { (response)
             in
             switch response.result {
             case .failure(_):
@@ -34,4 +39,4 @@ class NetworkManager: NSObject {
             }
         }
     }
-}
+   }

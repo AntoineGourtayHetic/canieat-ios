@@ -63,17 +63,21 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
 
  extension HomeController: UITableViewDelegate {
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Get current episode
-        let myRestaurant = restaurants[indexPath.row]
-        // Initialyze storyboard
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        // Get controller
-        let detailController = storyboard.instantiateViewController(withIdentifier: "DetailID") as! DetailViewController
-        // Add params
-        detailController.selectedRestaurant = myRestaurant
-        // Push new view
-        self.navigationController?.pushViewController(detailController, animated: true)
-        
+        if indexPath.row > 0 {
+            // Get current episode
+            let myRestaurant = restaurants[indexPath.row]
+            // Initialyze storyboard
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            // Get controller
+            let detailController = storyboard.instantiateViewController(withIdentifier: "DetailID") as! DetailViewController
+            // Add params
+            detailController.selectedRestaurant = myRestaurant
+            // Push new view
+            self.navigationController?.pushViewController(detailController, animated: true)
+        }
+        else{
+            print("Map")
+        }
     }
 }
 

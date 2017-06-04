@@ -21,7 +21,8 @@ class Restaurant: NSObject {
     }
     init(json: JSON){
         self.name = json["name"].stringValue
-        self.imageUrl = json[""].stringValue
+        //self.imageUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(json["photos"]["photo_reference"].stringValue)&key=AIzaSyA8Jf9E6m_Rr_v_fd-rA7dQOtn1VnTR4zs"
+        self.imageUrl = json["photos"]["photo_reference"].stringValue
         self.latitude = json["geometry"]["location"]["lat"].doubleValue
         self.longitude = json["geometry"]["location"]["lng"].doubleValue
         self.category = json[""].stringValue
