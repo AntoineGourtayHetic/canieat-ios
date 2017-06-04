@@ -37,7 +37,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
             self.restaurants = restaurantFromAPI
             self.tableView.reloadData()
             for restaurant in self.restaurants {
-                print(restaurant.name)
+                //print(restaurant.name)
             }
             self.tableView.reloadData()
         }
@@ -78,10 +78,13 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
 }
 
 extension HomeController: UITableViewDataSource {
+    //func numberOfSections(in tableView: UITableView) -> Int{
+      //return 3
+    //}
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // print("cellForRowAt: \(indexPath.row)")

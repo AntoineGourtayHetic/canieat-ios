@@ -13,8 +13,8 @@ class Restaurant: NSObject {
     var name: String!
     var imageUrl: String!
     var category: String!
-    var latitude: Int!
-    var longitude: Int!
+    var latitude: Double!
+    var longitude: Double!
     
     override init(){
         
@@ -22,8 +22,8 @@ class Restaurant: NSObject {
     init(json: JSON){
         self.name = json["name"].stringValue
         self.imageUrl = json[""].stringValue
-        self.latitude = json["lat"].intValue
-        self.longitude = json["lng"].intValue
+        self.latitude = json["geometry"]["location"]["lat"].doubleValue
+        self.longitude = json["geometry"]["location"]["lng"].doubleValue
         self.category = json[""].stringValue
     }
 }
