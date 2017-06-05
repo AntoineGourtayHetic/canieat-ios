@@ -23,7 +23,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         let location = locations[0]
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.03, 0.03)
         let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         map.setRegion(region, animated: true)
@@ -95,7 +95,13 @@ extension HomeController: UITableViewDataSource {
         let myRestaurant = restaurants[indexPath.row]
         
         var cell: UITableViewCell?
-    
+        if indexPath.row >= 1 {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: myRestaurant.latitude, longitude: myRestaurant.longitude)
+            map.addAnnotation(annotation)
+
+        }
+        
         if indexPath.row == 1 {
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
             cell2.restaurantName.text = myRestaurant.name

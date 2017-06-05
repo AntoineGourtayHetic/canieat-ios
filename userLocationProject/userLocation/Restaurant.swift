@@ -15,6 +15,8 @@ class Restaurant: NSObject {
     var category: String!
     var latitude: Double!
     var longitude: Double!
+    var adress: String!
+    var open: Bool!
     
     override init(){
         
@@ -22,9 +24,11 @@ class Restaurant: NSObject {
     init(json: JSON){
         self.name = json["name"].stringValue
         //self.imageUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(json["photos"]["photo_reference"].stringValue)&key=AIzaSyA8Jf9E6m_Rr_v_fd-rA7dQOtn1VnTR4zs"
-        self.imageUrl = json["photos"]["photo_reference"].stringValue
+        self.imageUrl = json["photos"][""]["photo_reference"].stringValue
         self.latitude = json["geometry"]["location"]["lat"].doubleValue
         self.longitude = json["geometry"]["location"]["lng"].doubleValue
         self.category = json[""].stringValue
+        self.adress = json["vicinity"].stringValue
+        self.open = json["opening_hours"]["open_now"].boolValue
     }
 }

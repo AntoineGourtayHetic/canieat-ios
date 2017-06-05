@@ -14,13 +14,21 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var button_go: UIButton!
+    @IBOutlet weak var adress: UILabel!
+    @IBOutlet weak var open: UILabel!
     
     var selectedRestaurant = Restaurant()
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = selectedRestaurant.name
         print(selectedRestaurant.imageUrl)
-
+        adress.text = selectedRestaurant.adress
+        if selectedRestaurant.open == true {
+            open.text = "ouvert man"
+        }
+        else{
+            open.text = "fermé man"
+        }
         // Do any additional setup after loading the view.
     }
     
