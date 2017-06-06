@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Home-->
+        <!--Carte-->
         <scene sceneID="ENJ-XE-at0">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="dDY-JP-RsM" customClass="HomeController" customModule="userLocation" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="440"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vuv-Xo-VOv" id="SlA-Ty-e4t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="440"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="439.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -52,7 +52,7 @@
                                         <rect key="frame" x="0.0" y="468" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sZv-pM-Bx5" id="9zy-Tt-vtH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-3q-qz3">
@@ -103,7 +103,7 @@
                             <constraint firstItem="cpc-F0-CCq" firstAttribute="top" secondItem="4u3-jq-4hh" secondAttribute="bottom" id="fDK-a2-jR1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="E3g-dQ-YgQ"/>
+                    <navigationItem key="navigationItem" title="Carte" id="E3g-dQ-YgQ"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
@@ -173,7 +173,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDG-dn-Gqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1916" y="-379.16041979010498"/>
+            <point key="canvasLocation" x="1868" y="-379"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="xk8-Mt-Kgm">
+            <objects>
+                <viewController storyboardIdentifier="MenuView" id="76L-Zr-7zA" customClass="MenuController" customModule="userLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SqV-sa-Ris"/>
+                        <viewControllerLayoutGuide type="bottom" id="w1I-EC-A5h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NNU-GQ-YJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTj-mf-s4C">
+                                <rect key="frame" x="148" y="157" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Carte"/>
+                                <connections>
+                                    <segue destination="dDY-JP-RsM" kind="push" id="Bqb-fe-oVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbz-nH-qCG">
+                                <rect key="frame" x="148" y="253" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-Xc-SeT">
+                                <rect key="frame" x="148" y="345" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="JwD-wk-JYm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nd-eM-QwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="-379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4eg-uP-8ko">
@@ -184,12 +223,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dDY-JP-RsM" kind="relationship" relationship="rootViewController" id="SEi-XA-Zcm"/>
+                        <segue destination="76L-Zr-7zA" kind="relationship" relationship="rootViewController" id="nCG-Cj-Vu7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aj3-AF-Q8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="-279"/>
+            <point key="canvasLocation" x="-1242" y="-379"/>
         </scene>
     </scenes>
 </document>
