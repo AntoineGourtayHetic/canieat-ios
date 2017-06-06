@@ -9,15 +9,14 @@
 import UIKit
 
 class RestaurantDuoCell: UITableViewCell {
-
-    @IBOutlet weak var restaurantImageLeft: UIImageView!
-    @IBOutlet weak var restaurantNameLeft: UILabel!
-    @IBOutlet weak var restaurantImageRight: UIImageView!
-    @IBOutlet weak var restaurantNameRight: UILabel!
     
+    
+    @IBOutlet weak var CollectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

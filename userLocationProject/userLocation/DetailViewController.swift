@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import AlamofireImage
 
 class DetailViewController: UIViewController {
     
@@ -22,12 +23,14 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         name.text = selectedRestaurant.name
         print(selectedRestaurant.imageUrl)
+        let url = URL(string: selectedRestaurant.imageUrl)!
+        imageView.af_setImage(withURL: url)
         adress.text = selectedRestaurant.adress
         if selectedRestaurant.open == true {
-            open.text = "ouvert man"
+            open.text = "Ouvert"
         }
         else{
-            open.text = "fermé man"
+            open.text = "Fermé"
         }
         // Do any additional setup after loading the view.
     }

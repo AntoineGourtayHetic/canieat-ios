@@ -7,6 +7,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import AlamofireImage
 
 
 class HomeController: UIViewController, CLLocationManagerDelegate {
@@ -16,6 +17,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     //Map
     
     @IBOutlet weak var map: MKMapView!
+    
     
     let manager = CLLocationManager()
     
@@ -82,10 +84,6 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
 }
 
 extension HomeController: UITableViewDataSource {
-    //func numberOfSections(in tableView: UITableView) -> Int{
-      //return 3
-    //}
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
     }
@@ -102,17 +100,26 @@ extension HomeController: UITableViewDataSource {
 
         }
         
-        if indexPath.row == 1 {
+        if indexPath.row >= 1 {
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
             cell2.restaurantName.text = myRestaurant.name
+            let url = URL(string: myRestaurant.imageUrl)!
+            cell2.restaurantImage.af_setImage(withURL: url)
             cell = cell2
         }
-        else if indexPath.row >= 2{
-             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
-            cell2.restaurantNameLeft.text = myRestaurant.name
-            cell2.restaurantNameRight.text = myRestaurant.name
-            cell = cell2
-        }
+        //else if indexPath.row >= 2{
+          //  let index = indexPath.row*2
+            //let myRestaurantA = restaurants[index - 1]
+            //let myRestaurantB = restaurants[index]
+            
+            
+            //cell.restaurants = [myRestaurantA, myRestaurantB]
+            
+            //let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
+            //cell2.nameLeft.text = myRestaurantA.name
+            //cell2.nameRight.text = myRestaurantB.name
+            //cell = cell2
+        //}
         else {
             cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as! EmptyCell
         }
