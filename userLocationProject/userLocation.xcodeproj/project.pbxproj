@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2822E7861EE710CB009A7F05 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E7851EE710CB009A7F05 /* MenuController.swift */; };
-		285D3FD51EE5B1AF00753828 /* RestaurantCollectionViewCellLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D3FD41EE5B1AF00753828 /* RestaurantCollectionViewCellLeft.swift */; };
 		289650D21EDB2DA200124242 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289650D11EDB2DA200124242 /* HomeController.swift */; };
 		289650D91EDB708300124242 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D31EDB708300124242 /* Mitr-Bold.ttf */; };
 		289650DA1EDB708300124242 /* Mitr-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		2822E7851EE710CB009A7F05 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
-		285D3FD41EE5B1AF00753828 /* RestaurantCollectionViewCellLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCellLeft.swift; sourceTree = "<group>"; };
 		289650D11EDB2DA200124242 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		289650D31EDB708300124242 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
 		289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				28BCF2691EE00EAA00773504 /* RestaurantDuoCell.swift */,
 				28A33B611EE2F4CF008B6C72 /* EmptyCell.swift */,
 				28A33B621EE2F4CF008B6C72 /* EmptyCell.xib */,
-				285D3FD41EE5B1AF00753828 /* RestaurantCollectionViewCellLeft.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -315,7 +312,6 @@
 				28BCF26A1EE00EAA00773504 /* RestaurantDuoCell.swift in Sources */,
 				28BCF2661EE00E8D00773504 /* RestaurantFullCell.swift in Sources */,
 				DEA88FD71D90415F00005FD0 /* AppDelegate.swift in Sources */,
-				285D3FD51EE5B1AF00753828 /* RestaurantCollectionViewCellLeft.swift in Sources */,
 				289650D21EDB2DA200124242 /* HomeController.swift in Sources */,
 				28BA23CE1EE16A7B00BA6AB2 /* DetailViewController.swift in Sources */,
 			);

@@ -60,7 +60,7 @@
                                                     <color key="backgroundColor" red="0.84253666469999999" green="0.65712496090000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr9-BP-VhA">
-                                                    <rect key="frame" x="38" y="122.5" width="200" height="27"/>
+                                                    <rect key="frame" x="38" y="129.5" width="200" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="200" id="Dcf-Xm-PeQ"/>
                                                     </constraints>
@@ -114,6 +114,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0q-Yx-9y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940" y="-229.38530734632684"/>
+        </scene>
+        <!--Recettes-->
+        <scene sceneID="1mc-K4-d9R">
+            <objects>
+                <viewController id="dfO-OT-Adm" userLabel="Recettes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rzl-pJ-zGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z70-qk-3TD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rTb-mj-cxi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recettes" id="3Vr-QH-oRO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qp2-NO-rIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="686"/>
+        </scene>
+        <!--À propos-->
+        <scene sceneID="MXq-I9-AEs">
+            <objects>
+                <viewController id="E7s-bm-0NB" userLabel="À propos" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5v4-5z-rs4"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCX-e5-xm9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rQc-L4-DrF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="À propos" id="lb2-RG-8ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzr-6r-oYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="1384"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="UyW-on-Upx">
@@ -198,12 +236,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbz-nH-qCG">
                                 <rect key="frame" x="148" y="253" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Recettes"/>
+                                <connections>
+                                    <segue destination="dfO-OT-Adm" kind="push" id="PMx-Qd-2G3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-Xc-SeT">
                                 <rect key="frame" x="148" y="345" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="À propos"/>
+                                <connections>
+                                    <segue destination="E7s-bm-0NB" kind="push" id="cnr-aX-FhY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -218,7 +262,7 @@
         <scene sceneID="4eg-uP-8ko">
             <objects>
                 <navigationController storyboardIdentifier="NavigationRoot" id="TQQ-gK-V1n" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="DYC-KF-XVC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DYC-KF-XVC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
