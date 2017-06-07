@@ -16,7 +16,7 @@ class RecettesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self as! UITableViewDelegate
-        tableView.dataSource = self as! UITableViewDataSource
+        tableView.dataSource = self as UITableViewDataSource
         
         var recette1 = Recette()
         recette1.name = "Tarte aux poivrons"
