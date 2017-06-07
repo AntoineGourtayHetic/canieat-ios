@@ -32,8 +32,18 @@ class RecettesViewController: UIViewController {
         recette2.personne = "Personnes : 2"
         recette2.difficulte = "Difficulté : facile"
         
+        var recette3 = Recette()
+        recette3.name = "Brioche moelleuse pur beurre végétal"
+        recette3.personne = "Personnes : 12"
+        recette3.difficulte = "Difficulté : difficile"
+        recette3.ingredients = "500 g de farine T45 gruau, 10 cl de lait végétal tiède (soja par exemple), 21 g de levure fraiche (achat en boulangerie), 150 g de jus de pois chiche ou jus d’haricots rouges (jus d’une petite boite de conserve), 150 g de tofu soyeux, 100 g sucre de canne, 12 g de sel, 220 g de margarine végétal non salé (du type St Hubert bio), Quelques gouttes d’amande amère (ou de vanille), Du sirop d’érable ou d’agave"
+        recette3.contenu = "Pour que la brioche se conserve plus longtemps et qu’elle soit plus savoureuse, on peut réaliser un levain sur levure (ou préferment) :, Dans un saladier ou la cuve d’un robot, verser 100 g de farine, le lait végétal tiède, les 21 g de levure. Mélanger grossièrement avec une baguette chinoise ou le manche d’une cuillère en bois. Verser le reste de la farine sur le dessus, sans mélanger. Laisser le préferment lever jusqu’à ce qu’il perse le dessus de la farine (environ 10 minutes)."
+        
+
+        
         recettes.append(recette1)
         recettes.append(recette2)
+        recettes.append(recette3)
     }
 
     override func didReceiveMemoryWarning() {
