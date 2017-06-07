@@ -88,8 +88,6 @@ extension HomeController: UITableViewDataSource {
         return restaurants.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        // print("cellForRowAt: \(indexPath.row)")
         let myRestaurant = restaurants[indexPath.row]
         
         var cell: UITableViewCell?
@@ -98,28 +96,13 @@ extension HomeController: UITableViewDataSource {
             annotation.coordinate = CLLocationCoordinate2D(latitude: myRestaurant.latitude, longitude: myRestaurant.longitude)
             map.addAnnotation(annotation)
 
-        }
-        
-        if indexPath.row >= 1 {
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantFullCell", for: indexPath) as! RestaurantFullCell
             cell2.restaurantName.text = myRestaurant.name
             let url = URL(string: myRestaurant.imageUrl)!
             cell2.restaurantImage.af_setImage(withURL: url)
+            cell2.restaurantImage.layer.cornerRadius = 10
             cell = cell2
         }
-        //else if indexPath.row >= 2{
-          //  let index = indexPath.row*2
-            //let myRestaurantA = restaurants[index - 1]
-            //let myRestaurantB = restaurants[index]
-            
-            
-            //cell.restaurants = [myRestaurantA, myRestaurantB]
-            
-            //let cell2 = tableView.dequeueReusableCell(withIdentifier: "RestaurantDuoCell", for: indexPath) as! RestaurantDuoCell
-            //cell2.nameLeft.text = myRestaurantA.name
-            //cell2.nameRight.text = myRestaurantB.name
-            //cell = cell2
-        //}
         else {
             cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as! EmptyCell
         }

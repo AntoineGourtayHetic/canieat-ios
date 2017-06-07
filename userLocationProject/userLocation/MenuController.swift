@@ -10,9 +10,14 @@ import UIKit
 
 class MenuController: UIViewController {
 
+    @IBOutlet weak var buttonCarte: UIButton!
+    @IBOutlet weak var buttonRecettes: UIButton!
+    @IBOutlet weak var buttonApropos: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buttonCarte.layer.cornerRadius = 10
+        buttonRecettes.layer.cornerRadius = 10
+        buttonApropos.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 
