@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2822E7861EE710CB009A7F05 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822E7851EE710CB009A7F05 /* MenuController.swift */; };
+		2866C8B01EE88F9200AB1487 /* DetailRecetteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866C8AF1EE88F9200AB1487 /* DetailRecetteController.swift */; };
+		287CA4CE1EE8645700B0C8CB /* RecettesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA4CD1EE8645700B0C8CB /* RecettesViewController.swift */; };
+		287CA4D01EE864CF00B0C8CB /* RecettesFullCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA4CF1EE864CF00B0C8CB /* RecettesFullCell.swift */; };
+		287CA4D21EE865D000B0C8CB /* Recette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA4D11EE865D000B0C8CB /* Recette.swift */; };
 		289650D21EDB2DA200124242 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289650D11EDB2DA200124242 /* HomeController.swift */; };
 		289650D91EDB708300124242 /* Mitr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D31EDB708300124242 /* Mitr-Bold.ttf */; };
 		289650DA1EDB708300124242 /* Mitr-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */; };
@@ -33,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		2822E7851EE710CB009A7F05 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		2866C8AF1EE88F9200AB1487 /* DetailRecetteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRecetteController.swift; sourceTree = "<group>"; };
+		287CA4CD1EE8645700B0C8CB /* RecettesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecettesViewController.swift; sourceTree = "<group>"; };
+		287CA4CF1EE864CF00B0C8CB /* RecettesFullCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecettesFullCell.swift; sourceTree = "<group>"; };
+		287CA4D11EE865D000B0C8CB /* Recette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recette.swift; sourceTree = "<group>"; };
 		289650D11EDB2DA200124242 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		289650D31EDB708300124242 /* Mitr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-Bold.ttf"; sourceTree = "<group>"; };
 		289650D41EDB708300124242 /* Mitr-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mitr-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -101,6 +109,8 @@
 				289650D11EDB2DA200124242 /* HomeController.swift */,
 				28BA23CD1EE16A7B00BA6AB2 /* DetailViewController.swift */,
 				2822E7851EE710CB009A7F05 /* MenuController.swift */,
+				287CA4CD1EE8645700B0C8CB /* RecettesViewController.swift */,
+				2866C8AF1EE88F9200AB1487 /* DetailRecetteController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 				28BCF2651EE00E8D00773504 /* RestaurantFullCell.swift */,
 				28A33B611EE2F4CF008B6C72 /* EmptyCell.swift */,
 				28A33B621EE2F4CF008B6C72 /* EmptyCell.xib */,
+				287CA4CF1EE864CF00B0C8CB /* RecettesFullCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				28C708E71EDEE7B500D2507C /* Restaurant.swift */,
+				287CA4D11EE865D000B0C8CB /* Recette.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -321,11 +333,15 @@
 				2822E7861EE710CB009A7F05 /* MenuController.swift in Sources */,
 				28C708E41EDEE5BC00D2507C /* NetworkManager.swift in Sources */,
 				28A33B631EE2F4CF008B6C72 /* EmptyCell.swift in Sources */,
+				287CA4D01EE864CF00B0C8CB /* RecettesFullCell.swift in Sources */,
 				28C708E81EDEE7B500D2507C /* Restaurant.swift in Sources */,
+				287CA4CE1EE8645700B0C8CB /* RecettesViewController.swift in Sources */,
+				287CA4D21EE865D000B0C8CB /* Recette.swift in Sources */,
 				28BCF2661EE00E8D00773504 /* RestaurantFullCell.swift in Sources */,
 				DEA88FD71D90415F00005FD0 /* AppDelegate.swift in Sources */,
 				289650D21EDB2DA200124242 /* HomeController.swift in Sources */,
 				28BA23CE1EE16A7B00BA6AB2 /* DetailViewController.swift in Sources */,
+				2866C8B01EE88F9200AB1487 /* DetailRecetteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

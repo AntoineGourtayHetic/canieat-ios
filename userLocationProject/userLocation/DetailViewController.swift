@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     var selectedRestaurant = Restaurant()
     override func viewDidLoad() {
         super.viewDidLoad()
+        button_go.layer.cornerRadius = 8
         name.text = selectedRestaurant.name
         print(selectedRestaurant.imageUrl)
         let url = URL(string: selectedRestaurant.imageUrl)!
